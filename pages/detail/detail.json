@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cut-string": "../cutString/cutString"
+  },
+  "enablePullDownRefresh": false
+}

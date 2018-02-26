@@ -1,0 +1,100 @@
+/* pages/maoList/list.wxss *//* pages/list/list.wxss */
+.list{
+  height: 100%;
+  display: flex;
+  padding: 20rpx;
+  border-top:1rpx solid #e5e5e5;
+}
+.list-img{
+  width: 200rpx;
+  height: 300rpx;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-right:15rpx;
+  flex-shrink:0;
+}
+image{
+    width: 100%;
+    height: 100%;
+  }
+.list-text{
+  flex:1;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+.f14{
+  font-size: 40rpx;
+}
+.f12{
+  font-size: 20rpx;
+}
+.c-state1{
+  transition:all 500ms;
+  transform: rotate(0deg) scale(1) translate(60%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(60%,0%); 
+}
+.c-stateEnd{
+  transition:all 500ms;
+  transform: rotate(0deg) scale(1) translate(0%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(0%,0%);
+}
+.page{
+  position: relative;
+}
+.page-bottom{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100vh;
+  background-color: rgba(251, 251, 251, 0.8);
+}
+.page-top{
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+.page-content{
+  border-top: 1px solid #e5e5e5;
+}
+.page-collect{
+  position: fixed;
+  right:20px;
+  top: 80%;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150rpx;
+  background-color: rgba(255, 251, 251, 0.8);
+  box-shadow: 0 0px 2px;
+}
+.l-icon{
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 20rpx;
+}
+.list-text-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-list{
+  display: flex;
+  align-items: center;
+  padding: 15rpx;
+  border-bottom: 1px solid #e5e5e5;
+}
+.c-list-pic{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin-right: 25rpx;
+}
+.c-list-topic{
+  font-size: 35rpx;
+}

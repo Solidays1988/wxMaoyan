@@ -1,0 +1,9 @@
+var sphtmel = {
+  getDia: function(str){
+    return str.slice(3, str.length-4)
+  }
+}
+
+module.exports = {
+  getDia: sphtmel.getDia
+}

@@ -1,0 +1,5 @@
+<!--pages/list/list.wxml-->
+<view class='list' wx:for="{{list}}" wx:key="{{index}}">
+  <view class='list-img'><image src='{{item.images.small}}'></image></view>
+  <view class='list-text'>{{item.title}}</view>
+</view>

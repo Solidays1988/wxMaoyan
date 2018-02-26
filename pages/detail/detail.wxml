@@ -1,0 +1,61 @@
+<!--pages/detail/detail.wxml-->
+<!-- <wxs module="getDia" src="../filter/filter.wxs"></wxs> -->
+<view class='detail-con'>
+  <view>
+    <view class='d'>
+      <image class="d-img" src="{{mM.img}}"></image>
+      <view class="d-dia">
+        <view class="d-dia-topic">{{mM.nm}}</view>
+        <view>
+          <text class='d-dia-type'>类型:</text>
+          <text>{{mM.cat}}</text>
+        </view>
+        <view>
+          <text class='d-dia-type'>时间:</text>
+          <text>{{mM.rt}}</text>
+        </view>
+        <view>
+          <text class='d-dia-type'>时长:</text>
+          <text>{{mM.dur}}</text>
+        </view>
+        <view>
+          <text class='d-dia-type'>评分:</text>
+          <text>{{mM.sc}}</text>
+        </view>
+        <view>
+          <text class='d-dia-type'>导演:</text>
+          <text>{{mM.dir}}</text>
+        </view>
+        <view>
+          <text class='d-dia-type'>主演:</text>
+          <text>{{mM.star}}</text>
+        </view>
+        <view>
+          <text class='d-dia-type'>地区:</text>
+          <text>{{mM.src}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='d-dia-type d-dia-short-detail'>
+    <text class='d-dia-type'>简介:</text>
+    <cut-string outStr="{{mM.dra}}"></cut-string>
+    </view>
+    <view class="hot-com">
+    热门评论:
+    </view>
+  </view>
+  <view class="com">
+    <view class="com-con" wx:for="{{hcmts}}" wx:key="{{index}}">
+      <image class='com-con-pic' src="{{item.avatarurl}}"></image>
+      <view class="com-con-detail">
+        <view class="detail-m1">{{item.nick}}</view>
+        <view class="detail-m2">{{item.content}}</view>
+        <view class="detail-m3">
+          <text class="m3-i">👍:{{item.approve}}</text>
+          <text class="m3-i">回复:{{item.reply}}</text>
+          <text class="m3-i">{{item.time}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
